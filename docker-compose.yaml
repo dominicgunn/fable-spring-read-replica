@@ -1,0 +1,12 @@
+postgres:
+  image: postgres:latest
+  ports:
+    - "5432:5432"
+  environment:
+    - POSTGRES_DB=postgres
+    - POSTGRES_USER=postgres
+    - POSTGRES_PASSWORD=postgres
+  volumes:
+    - ./logs:/logs
+    - ./sql:/docker-entrypoint-initdb.d
+  command: postgres -c log_line_prefix="%a %u" -c log_statement=all -c logging_collector=true -c log_destination=stderr -c log_directory=/logs

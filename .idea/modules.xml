@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/read-router.iml" filepath="$PROJECT_DIR$/read-router.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/read-router_main.iml" filepath="$PROJECT_DIR$/.idea/modules/read-router_main.iml" group="read-router" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/read-router_test.iml" filepath="$PROJECT_DIR$/.idea/modules/read-router_test.iml" group="read-router" />
+    </modules>
+  </component>
+</project>

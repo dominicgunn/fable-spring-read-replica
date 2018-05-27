@@ -1,0 +1,20 @@
+spring:
+  primary:
+    datasource:
+      password: write
+      username: fable_write
+      driver: org.postgresql.Driver
+      url: jdbc:postgresql://localhost:5432/postgres
+  replica:
+    datasource:
+      password: read
+      username: fable_read
+      driver: org.postgresql.Driver
+      url: jdbc:postgresql://localhost:5432/postgres
+
+  # Spring Boot 2 + Hibernate Issue: https://hibernate.atlassian.net/browse/HHH-12368
+  jpa:
+    properties:
+      hibernate:
+        temp:
+          use_jdbc_metadata_defaults: false
