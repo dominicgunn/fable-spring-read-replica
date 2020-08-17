@@ -1,7 +1,7 @@
 postgres:
   image: postgres:latest
   ports:
-    - "5432:5432"
+    - "35432:5432"
   environment:
     - POSTGRES_DB=postgres
     - POSTGRES_USER=postgres

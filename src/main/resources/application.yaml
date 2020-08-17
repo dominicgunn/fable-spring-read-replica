@@ -4,13 +4,13 @@ spring:
       password: write
       username: fable_write
       driver: org.postgresql.Driver
-      url: jdbc:postgresql://localhost:5432/postgres
+      url: jdbc:postgresql://localhost:35432/postgres
   replica:
     datasource:
       password: read
       username: fable_read
       driver: org.postgresql.Driver
-      url: jdbc:postgresql://localhost:5432/postgres
+      url: jdbc:postgresql://localhost:35432/postgres
 
   # Spring Boot 2 + Hibernate Issue: https://hibernate.atlassian.net/browse/HHH-12368
   jpa:

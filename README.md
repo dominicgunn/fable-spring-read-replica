@@ -10,5 +10,6 @@ A full blog post delving into details of this project is available for reading [
 ## Usage
 
 In order to use this project, you'll need Docker and Java 8 installed.
-
+Run once:
+`mkdir ./logs; chmod 777 ./logs`
 Simply `docker-compose up` and then `./gradlew bootRun`. You should see logs of `fable_write` inserting data, and `fable_read` then reading. Easy!
